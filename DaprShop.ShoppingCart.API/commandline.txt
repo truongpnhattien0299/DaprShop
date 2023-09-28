@@ -1,0 +1,1 @@
+dapr run --app-id shoppingcartapi --app-port 5049 --dapr-http-port 3500 dotnet run

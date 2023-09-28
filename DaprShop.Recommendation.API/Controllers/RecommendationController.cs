@@ -11,7 +11,7 @@ namespace DaprShop.Recommendation.API.Controllers
     [Route("api/recommendations")]
     public class RecommendationController : ControllerBase
     {
-        private const string PubsubName = "pubsub";
+        private const string PubsubName = "pubsub-kafka";
         private const string TopicNameOfShoppingCartItems = "daprshop.shoppingcart.items";
 
         [Topic(PubsubName, TopicNameOfShoppingCartItems)]

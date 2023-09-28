@@ -33,7 +33,7 @@ namespace DaprShop.ShoppingCart.API.Services
                 ProductId = item.ProductId
             };
 
-            const string pubsubName = "pubsub";
+            const string pubsubName = "pubsub-kafka";
             const string topicNameOfShoppingCartItems = "daprshop.shoppingcart.items";
 
             await _daprClient.PublishEventAsync(pubsubName, topicNameOfShoppingCartItems, productItemAddedToShoppingCartEvent);
